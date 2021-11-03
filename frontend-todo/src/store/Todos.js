@@ -3,7 +3,7 @@ todo_item = { id, owner, todo_name }
 */
 
 class Todos {
-    todos = [];
+    todos = []
 
     createTodo(todo){
         //Implement add to database
@@ -23,9 +23,16 @@ class Todos {
         }
     }
 
-    editTodo(){
+    editTodo(todo){
         for (let i of this.todos) {
-
+            if(i.id === todo.id){
+                i.todo_name = todo.name;
+            }
         }
     }
+
+    get totalTodo() {
+        return this.todos.length;
+    }
+
 }
