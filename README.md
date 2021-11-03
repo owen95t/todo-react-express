@@ -8,6 +8,7 @@
 - Express
 - MongoDB
 - mobx (state management)
+- Axios (fetch replacement)
 
 Will be hosted on netlify/heroku free tier
 
