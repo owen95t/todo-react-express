@@ -7,7 +7,7 @@ const TodoSchema = new Schema({
         required: true
     },
     owner: {
-        String: true,
+        type: String,
         required: true
     },
     todo_name: {

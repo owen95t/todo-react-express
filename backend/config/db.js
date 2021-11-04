@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const uri = process.env.MONGO_URI || require('./config/secret').uri
+const uri = process.env.MONGO_URI || require('./secret.js').uri
 
 const connectDB = async () => {
     try{
