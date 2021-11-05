@@ -1,5 +1,6 @@
 import {Helmet} from 'react-helmet'
 import {Button, Container, Row} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 const HomePage = () => {
     return (
@@ -12,7 +13,7 @@ const HomePage = () => {
                 {/*    CENTERED*/}
                     <Container className='justify-content-lg-center'>
                         <Row>
-                            <h1>Hi there! </h1>
+                            <h1>Hi there! Welcome to MyTODO </h1>
                             <pre>
                                 This is a basic todo list web-app.
                                 Try the demo, or sign up!
@@ -20,9 +21,12 @@ const HomePage = () => {
                         </Row>
                         <Row>
                             <div className='d-grid gap-2'>
-                                <Button variant='primary' size='lg'>
-                                    Demo
-                                </Button>
+                                <Link to='/todos'>
+                                    <Button variant='primary' size='lg'>
+                                        Demo
+                                    </Button>
+                                </Link>
+
                                 <Button variant='warning' size='lg'>
                                     Login/Signup
                                 </Button>
