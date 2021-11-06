@@ -1,4 +1,4 @@
-import {Container, Row} from "react-bootstrap";
+import {Container, Row, InputGroup, Button, FormControl} from "react-bootstrap";
 import {useEffect} from "react";
 import sampleData from '../test/sampleData'
 import TodoItem from "./TodoItem";
@@ -9,8 +9,20 @@ const TodoPage = () => {
     return (
         <>
             <Container>
-                <Row >
+                <Row className='justify-content-lg-center'>
                     Your Todo List!
+                </Row>
+                <Row>
+                    <InputGroup className="mb-3">
+                        <FormControl
+                            placeholder="What do you need to do?"
+                            aria-label="Todo name"
+                            aria-describedby="basic-addon2"
+                        />
+                        <Button variant="success" id="button-addon2">
+                            Add
+                        </Button>
+                    </InputGroup>
                 </Row>
                 <Row className='justify-content-lg-center'>
                 {/*    MAIN LIST*/}
